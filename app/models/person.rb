@@ -90,8 +90,8 @@ class Person < ActiveRecord::Base
               end
   end
 
-  def owns?(post)
-    self == post.person
+  def owns?(obj)
+    self == obj.author
   end
 
   def receive_url
